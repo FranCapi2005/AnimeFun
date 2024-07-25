@@ -1,0 +1,164 @@
+body{
+    background-color: var(--final--dark);
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--two-dark);
+    margin: 150px 40px;
+    padding-bottom: 25px;
+    border-radius: 7px;
+}
+
+.container__first--section label{
+    color: var(--off-white);
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.container__first--section{
+    display: flex;
+    flex-direction: column;
+    
+    input{
+        width: 270px;
+        border-radius: 3px;
+        border: 1px solid var(--white);
+        background-color: var(--four-dark);
+        color: var(--white);
+        padding: 0 0 0 4px;
+        height: 25px;
+    }
+
+    input:focus-visible{
+        outline: none;
+    }
+}
+
+.container__second--section{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.container__logIn{
+    font-size: 14px;
+    
+    a{
+        color: var(--white);
+        transition: color .3s ease-in-out;
+    }
+}
+
+.container__logIn:hover a{
+    color: var(--main-color);
+}
+
+.remember-me-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remember-me-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--off-white);
+    border-radius: 3px;
+    margin-right: 8px;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.remember-me-checkbox:checked {
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+}
+
+.remember-me-checkbox:checked::before {
+    content: "\2713";
+    color: var(--white);
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.remember-me-text {
+    color: var(--off-white);
+    font-size: 14px;
+}
+
+.btn--submit-register{
+    width: 270px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+    border: none;
+    height: 40px;
+    color: var(--white);
+    margin-bottom: 7px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 20px -6px var(--main-color);
+    -moz-box-shadow: 0px 0px 20px -6px var(--main-color);
+    box-shadow: 0px 0px 20px -6px var(--main-color);
+}
+
+.btn-google{
+    background: linear-gradient(to right, #4285F4, #DB4437, #F4B400, #0F9D58);
+    background-size: 200% 200%;
+    animation: google-gradient 10s ease infinite;
+    color: white;
+    padding: 10px 47px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 11px -6px var(--white);
+    -moz-box-shadow: 0px 0px 11px -6px var(--white);
+    box-shadow: 0px 0px 11px -6px var(--white);
+}
+
+.btn-facebook{
+    background: linear-gradient(to right, #4267B2, #3B5998);
+    color: var(--white);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 20px -6px #3B5998;
+    -moz-box-shadow: 0px 0px 20px -6px #3B5998;
+    box-shadow: 0px 0px 20px -6px #3B5998;
+}
+
+@keyframes btn-google {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.fa-brands{
+    margin-right: 5px;
+}
+
+.container__access--facebook, .container__access--google{
+    margin: 15px 0;
+}
+
+.text--register{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--white);
+}

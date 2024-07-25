@@ -1,0 +1,132 @@
+body{
+    background-color: var(--bg-color);
+}
+
+.container__section--n2{
+    margin-top: 20px;
+}
+
+.container__btn--seeMore{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.see--more{
+    align-items: center;
+    color: var(--main-color);
+    font-size: 13px;
+    text-decoration: underline var(--main-color);
+}
+
+.container__anime--img{
+    display: flex;
+    justify-content: center;
+
+    .anime--banner-img{
+        width: 92%;
+    }
+}
+
+.effect--shadow{
+    -webkit-box-shadow: 0px -45px 20px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -45px 20px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px -45px 20px 10px rgba(0,0,0,0.75);
+}
+
+.container__title{
+    display: flex;
+    flex-direction: column;
+    color: var(--off-white);
+    padding: 20px 10px 5px 10px;
+    margin: 0 5px 10px 5px;
+    font-size: 22px;
+}
+
+.container__count-chapters--season{
+    display: flex;
+    flex-direction: column;
+
+    .anime__season,
+    .anime__episodes{
+        color: var(--off-white);
+        font-size: 14px;
+    }
+}
+
+.container__califications--season{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    border-top: 2px solid var(--main-color);
+    padding-top: 10px;
+
+    .fa-star{
+        color: var(--main-color);
+    }
+
+    .anime--media-c{
+        color: var(--off-white);
+    }
+}
+
+.container__description{
+    margin: 10px 16px;
+
+    .anime--description{
+        font-size: 14px;
+        color: var(--off-white);
+    }
+}
+
+.container__chapter{
+    display: flex;
+
+    .container__anime--chapterImg{
+        width: 35%;
+        margin: 15px;
+
+        .anime--img-chapter-banner{
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    .container__anime-information{
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+
+        .anime--count-chapter, .anime--duration{
+            margin: 2px 8px;
+            color: var(--off-white);
+            font-size: 12px;
+        }
+
+        .anime--subtitle{
+            margin: 2px 8px;
+            color: var(--off-white);
+            font-size: 16px;
+        }
+    }
+}
+
+.target{
+    border-top: 2px solid var(--three-dark);
+}
+
+.container__anime-information .anime--subtitle-japanese{
+    font-size: 11px;
+    margin: 2px 8px;
+    color: var(--off-white);
+}
+
+.target:last-child{
+    border-bottom: 2px solid var(--three-dark);
+    margin-bottom: 50px;
+}
+
+.target:first-child{
+    border: none;
+    margin-top: 30px;
+}

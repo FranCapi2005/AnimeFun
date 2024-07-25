@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,900&display=swap');
+
+body{
+    background-color: var(--bg-color);
+}
+
+section{
+    position: relative;
+}
+
+.container__btn::-webkit-scrollbar {
+    height: .3em;
+    width: 0;
+}
+
+.container__btn::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container__btn::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+.container__img--background-banner{
+    width: 100%;
+    height: 225px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/image/back-banner.png");
+}
+.container__img--background-banner::before{
+    content: "";
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.473), rgba(0,0,0,0));
+    border-bottom: 2px solid var(--main-color);
+}
+
+.container{
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 20px;
+}
+
+.container__section--importantInfo .container__anime--btn{
+    width: 100%;
+    position: relative;
+    margin: 0 0 8px 10px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.container__anime--btn .btn--addList{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: var(--light-blue);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn--favourite,
+.btn--play{
+    width: 50%;
+    background-color: var(--yellow-duck);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    margin: 5px 1px 0 1px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.double-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__anime--btn .btn--favourite{
+    background-color: var(--main-color);
+}
+
+.container__section--importantInfo{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 57%;
+    z-index: 2;
+}
+
+.container__img--anime{
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.container__img--anime .anime--img-banner{
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 20px -5px #060606;
+    -moz-box-shadow: 0px 0px 20px -5px #060606;
+    box-shadow: 0px 0px 20px -5px #060606;
+    border-radius: 3px;
+}
+
+.container__btn{
+    overflow: auto;
+    display: flex;
+    margin: 0 18px 0 18px;
+}
+
+.container__tab{
+    display: none;
+}
+
+.container__btn button{
+    background-color: inherit;
+    color: var(--white);
+    width: inherit;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 15px;
+    margin: 3px;
+    cursor: pointer;
+    transition: background-color .7s ease;
+}
+
+.container__btn button:hover{
+    background-color: var(--main-color);
+}
+
+.active{
+    display: block;
+}
+
+.container__tab{
+    margin: 15px 10px 15px;
+}
+
+.container__titles-lg{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    font-family: "roboto";
+    font-size: 13px;
+}
+
+.container__title{
+    background-color: var(--two-dark);
+    margin-top: 8px;
+    padding: 4px 15px;
+    border-radius: 4px;
+    line-height: 22px;
+}
+
+.container__description, 
+.container__episodes--information, 
+.container__genres,
+.container__other--information{
+    background-color: var(--two-dark);
+    padding: 4px 15px 8px 15px;
+    margin-top: 8px;
+    border-radius: 4px;
+    color: var(--white);
+    font-family: "roboto"; 
+    font-size: 14px;
+    line-height: 22px;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.container__dates:not(:first-child){
+    margin-top: 10px;
+}
+
+.container__description .text, 
+.container__title .text-lg, 
+.container__genres .text-genre, 
+.container__dates .text--ep-date,
+.container__other--information .text--other{
+    color: var(--main-color);
+    font-family: "roboto";
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.anime--info-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item--link{
+    color: var(--white);
+    transition: color .5s ease-out;
+}
+
+.item--link:hover{
+    color: var(--light-blue);
+}
+
+
+
+
+/*  */
+.container__characters{
+    background-color: var(--two-dark);
+    margin: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 354px;
+    min-width: 320px;
+    flex: 1 1 auto;
+}
+
+.container__staff{
+    background-color: var(--two-dark);
+    margin: 8px;
+    border-radius: 4px;
+    max-width: 384px;
+    min-width: 280px;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.anime--character-rol, .actor-name, .staff-rol{
+    color: var(--white);
+    font-family: "roboto";
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.anime--character-name,
+.anime--actor-name,
+.anime--staff-name{
+    color: var(--yellow-duck);
+    font-family: "roboto";
+    font-size: 13px;
+    line-height: 22px;
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin-top: 4px;
+}
+.anime--actor-name{
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.anime--characterImg,
+.anime--characterActorImg,
+.anime--staffImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.container__img-actor,
+.container__img-character,
+.container__img-staff{
+    max-height: 135px;
+    background-size: cover;
+}
+.container__img-staff{
+    height: 115px;
+}
+
+.container__title-names {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: space-between;
+    padding: 0 6px;
+}
+
+.container__actor__name {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.container__name {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.container__staff-names{
+    width: 70%;
+    margin: 4px 0 0 10px;
+}
+
+.double {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,212 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100%;
+}
+
+
+.navbar__menu{
+  position: relative;
+  background-color: var(--final-dark);
+  
+  .search{
+    position: absolute;
+    right: 0;
+    margin-right: 24px;
+    color: var(--off-white);
+    bottom: 28%;
+    
+    .bx{
+      font-size: 20px;
+      padding: 0 7px;
+    }
+
+    .fa-circle-user{
+      font-size: 22px;
+      padding: 0 7px;
+      color: var(--white);
+    }
+  }
+}
+
+nav{
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.logo .menu-icon {
+  color: var(--off-white);
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.logo .logo-name {
+  color: var(--off-white);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: var(--bg-color);
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+nav.open .sidebar {
+  left: 0;
+}
+
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color .3s ease;
+}
+
+.nav-link {
+  padding: 6px 12px;
+}
+
+.nav-link .link {
+  font-size: 14px;
+  color: var(--off-white);
+  font-weight: 400;
+}
+
+.list{
+  background-color: var(--bg-color);
+  transition: background-color .7s ease;
+}
+
+.list:hover{
+  background-color: var(--main-color);
+}
+
+.topic{
+  color: var(--white);
+  font-size: 14px;
+  padding: 0 12px;
+  font-weight: normal;
+}
+
+.list__section{
+  border-top: 1px solid var(--mid-two-dark);
+  padding: 14px 0;
+  position: relative;
+
+  a{
+    color: var(--semi-off-white);
+  }
+
+  .dropdown .list__item{
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+
+  .dropdown {
+    max-height: 400px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+  }
+
+  .dropdown::-webkit-scrollbar {
+    width: .4em;
+  }
+  
+  .dropdown::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dropdown::-webkit-scrollbar-thumb {
+    background-color: var(--mid-three-dark);
+  }
+  
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 260px;
+  pointer-events: auto;
+}
+
+ul .list__item{
+  display: inline-block;
+  position: relative;
+  background-color: var(--bg-color);
+  transition: background-color .7s ease;
+}
+
+.list__item:hover{
+  background-color: var(--main-color);
+}
+
+ul .list__item .nav-link_genre{
+  display: block;
+}
+
+ul li ul.dropdown li{
+  display: block;
+}
+
+ul li ul.dropdown{
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+.blurred{
+  filter:blur(1px)
+}

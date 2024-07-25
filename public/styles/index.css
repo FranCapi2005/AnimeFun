@@ -1,0 +1,122 @@
+body{
+    background-color: var(--final--dark);
+    overflow-x: hidden;
+}
+
+.container__anime--info-card {
+    width: 100%;
+    max-width: 170px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 35px -15px #060606;
+    -moz-box-shadow: 0px 0px 35px -15px #060606;
+    box-shadow: 0px 0px 35px -15px #060606;
+    border: 2px solid var(--three-dark);
+    transition: border 1.6s, background-color .8s ease;
+    position: relative;
+    overflow: hidden; 
+}
+
+.container__all {
+    text-align: center;
+    background-color: var(--mid-three-dark);
+    border-radius: 100px;
+    position: relative;
+    transition: background-color 0.8s ease;
+}
+
+.container__other--info {
+    width: inherit;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.container__other--info:hover {
+    opacity: 1;
+}
+
+.container__other--info .container__aditional--information {
+    margin: 10px;
+}
+  
+.container__other--info .additional-information {
+    text-overflow: ellipsis;
+    text-wrap: balance;
+    font-size: 13px;
+    color: var(--white);
+}
+
+.text--information{
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+.container__other--info .container__icons--information {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.container__icons--information{
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+}
+
+.container__other--info .bxs-bookmark,
+.container__other--info .bx-play,
+.container__other--info .bx-plus{
+    font-size: 29px;
+    color: var(--off-white);
+    margin: 0 10px;
+    transition: color 0.4s ease;
+}
+
+.container__other--info .bx-play{
+    font-size: 36px;
+}
+
+.fa-circle-info:hover, .bx-play:hover, .bxs-bookmark:hover, .bx-plus:hover{
+    color: var(--main-color);
+}
+
+.container__anime--info-card:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--white);
+}
+
+.a--name{
+    font-size: 14px;
+    color: var(--semi-off-white);
+}
+
+.anime--img{
+    width: 100%;
+    height: 250px;
+}
+
+.property--flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__title--section{
+    display: flex;
+    margin: 15px 20px 10px 20px;
+    border-bottom: 2px solid var(--three-dark);
+    padding-top: 4px;
+}
+
+.section--title{
+    text-align: center;
+    color: var(--off-white);
+    margin: 0 6px;
+}

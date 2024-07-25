@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --bg-color: #141519;
+    --main-color: crimson;
+    --white: #fff;
+    --semi-off-white: #ddd;
+    --off-white: #eee;
+    --two-dark: #222;
+    --three-dark: #333;
+    --four-dark: #444;
+    --mid-two-dark: #232323;
+    --mid-three-dark: #373737;
+    --final--dark: #191919;
+    --light-blue: #47a5d1;
+    --yellow-duck: #d8bf34;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: #d830306e;
+    color: var(--white);
+}
+
+body::-webkit-scrollbar {
+    width: .4em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
